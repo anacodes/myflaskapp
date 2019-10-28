@@ -4,5 +4,9 @@
     <div class="jumbotron text-center" style="margin-top:50px;">
         <h1> Welcome to Flask App</h1>
         <p class="lead">This is a blog or application created based on the pyhton flask microframeworkk.</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
     </div>
 {% endblock %}
